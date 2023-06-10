@@ -4,8 +4,11 @@
   "description": "Project for summer practice",
   "main": "index.js",
   "type": "module",
+  "bin": {
+    "combine": "bin/txt-combiner.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx jest"
   },
   "repository": {
     "type": "git",
