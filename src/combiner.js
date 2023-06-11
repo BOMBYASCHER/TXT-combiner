@@ -1,6 +1,6 @@
-import copyrate from "./copyrate";
+import copyrate from './copyrate';
 
-export default (directory, resultFileName, filesToUnion) => {};
+export default (resultFileName, filesToUnion) => {};
 
 // Главная функция, движок приложения
 // Ничего не возвращает

@@ -1,4 +1,4 @@
-import buildpath from "./buildpath";
+import buildpath from './buildpath';
 
 export default (directory, fileName) => {};
 
