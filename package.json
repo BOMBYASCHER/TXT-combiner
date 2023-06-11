@@ -7,6 +7,9 @@
   "bin": {
     "combine": "bin/txt-combiner.js"
   },
+  "simple-git-hooks": {
+    "pre-push": "make lint"
+  },
   "scripts": {
     "test": "npx jest"
   },
