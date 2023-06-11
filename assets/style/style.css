@@ -85,16 +85,47 @@ h1 {
     margin-top: -30px;
 }
 
-.buttonDownload {
-    background: #3498db;
-    color: #fff;
-    font-size: 40px;
-    font-weight: 300;
+.btn{
     padding: 15px 40px;
-    display: inline-block;
-    border-radius: 43px;
-    text-decoration: none;
-}
+  border-radius: 43px;
+  background: #00BFFF;
+  border: 0;
+  font-size: 40px;
+  font-weight: 300;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  --size: 0px;
+  text-decoration: none;
+  display: inline-block;
+  
+  
+  }
+  
+  .btn b{
+      position: relative;
+      z-index: 10;
+  }
+  
+  .btn::after, .btn::before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: var(--size);
+  width: var(--size);
+  border-radius: 50%;
+  left: calc(50% - var(--size) / 2);
+  top: calc(50% - var(--size) / 2);
+  transition: all 0.5s ease;
+  }
+  
+  .btn:hover{
+      --size: 400px;
+  }
+  
+  .btn::after {
+  background:#0281ac;
+  }
 
 .winCompatible {
     font-size: 18px;
