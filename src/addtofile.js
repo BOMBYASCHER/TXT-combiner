@@ -1,7 +1,7 @@
-import {appendFile} from 'node:fs'
+import { appendFile } from 'node:fs';
 
-export default (filePath, data) => {};
-
+export default (filePath, data) => {
 /**
- * Добавляет данные в конец файла
- */
+* Добавляет данные в конец файла
+*/
+};

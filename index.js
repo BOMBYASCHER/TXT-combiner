@@ -1,3 +1,3 @@
-import combiner from '.src/combiner.js';
+import combiner from './src/combiner.js';
 
 export default combiner;
