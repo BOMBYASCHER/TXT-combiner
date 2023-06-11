@@ -213,13 +213,13 @@ a:-webkit-any-link {
     float: left;
     margin: 15px 40px 0 0;
 }
-
+/* Исправить */
 .icon80 {
     width: 80px;
     height: 80px;
     display: inline-block;
 }
-
+/* Исправить */
 .icon {
     background: url(../images/txt-file.png) no-repeat;
     overflow: hidden;
@@ -241,9 +241,12 @@ p {
     font-size: 24px;
     font-weight: 300;
 }
-
+/* Исправить */
 .mb0 {
-    margin-bottom: 0;
+    margin-bottom: 0; 
+    color: #008cff;
+    overflow: hidden;
 }
+
 
 
