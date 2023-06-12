@@ -1,4 +1,9 @@
-export default (path) => {};
+import { cwd } from 'node:process';
+import path from 'node:path';
 
-// Принимает на вход любой путь
-// Возвращает абсолютный путь
+export default (filePath) => {};
+
+/**
+ * Принимает на вход любой путь
+ * Возвращает абсолютный путь
+*/ 

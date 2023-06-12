@@ -7,6 +7,9 @@
   "bin": {
     "combine": "bin/txt-combiner.js"
   },
+  "simple-git-hooks": {
+    "pre-push": "make lint"
+  },
   "scripts": {
     "test": "npx jest"
   },
@@ -21,6 +24,7 @@
   },
   "homepage": "https://github.com/BOMBYASCHER/TXT-combiner#readme",
   "devDependencies": {
+    "@jest/globals": "^29.5.0",
     "eslint": "^8.42.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
