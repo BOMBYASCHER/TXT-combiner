@@ -332,6 +332,24 @@ h5 {
     margin-bottom: 0.2em;
     max-width: 600px;
     margin: 0 auto;
+    background:url(../images/backgroudtext.png) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-name: gradient;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes gradient {
+
+    0%{
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
 }
 
 .tile .tile-body p {
