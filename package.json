@@ -33,6 +33,7 @@
     "simple-git-hooks": "^2.8.1"
   },
   "dependencies": {
-    "commander": "^10.0.1"
+    "commander": "^10.0.1",
+    "gsap": "^3.12.1"
   }
 }
