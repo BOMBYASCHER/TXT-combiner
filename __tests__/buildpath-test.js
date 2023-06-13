@@ -14,7 +14,6 @@ test('Check buildpath (relative path)', () => {
 
   expect(buildpath(path1)).toEqual(correctFilePath1);
   expect(buildpath(path2)).toEqual(correctFilePath2);
-
 });
 
 test('Check buildpath (absolute path)', () => {
@@ -23,5 +22,4 @@ test('Check buildpath (absolute path)', () => {
 
   expect(buildpath(path1)).toEqual(correctFilePath1);
   expect(buildpath(path2)).toEqual(correctFilePath2);
-
 });
