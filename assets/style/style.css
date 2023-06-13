@@ -401,3 +401,7 @@ p:last-child {
     border-radius: 8px;
 }
 
+.content, .worpper > *{
+    will-change: transform;
+}
+
