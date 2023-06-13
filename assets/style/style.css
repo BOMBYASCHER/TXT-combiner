@@ -10,7 +10,7 @@ body {
 
 .bgBanner02 {
     background:#e28383 ;
-    height: 785px;
+    height: 950px;
     background-size: cover;
 }
 
@@ -64,14 +64,6 @@ div {
     color: #fff;
 }
 
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
 h1 {
     font-size: 80px;
     font-weight: 400;
@@ -112,6 +104,23 @@ h4 {
     display: block;
     margin-block-start: 1.33em;
     margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-bottom: 7px;
+}
+
+h5 {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
@@ -194,39 +203,8 @@ a:-webkit-any-link {
 }
 /* background 2  */
 
-.bgLightGray {
-    background: #edf2f4;
-}
-/* backgrund 3 gray */
-
 .wrapper1 {
     padding: 10px 0;
-}
-
-.hBlock1 {
-    margin: 0 0 50px;
-    padding: 0 20px;
-    vertical-align: top;
-}
-
-.hBlock1 .icon {
-    float: left;
-    margin: 15px 40px 0 0;
-}
-/* Исправить */
-.icon80 {
-    width: 80px;
-    height: 80px;
-    display: inline-block;
-}
-/* Исправить */
-.icon {
-    background: url(../images/txt-file.png) no-repeat;
-    overflow: hidden;
-}
-
-.hBlock1 h4, .hBlock1 p {
-    margin-left: 120px;
 }
 
 p {
@@ -237,16 +215,189 @@ p {
     margin-inline-end: 0px;
 }
 
-.smallText {
-    font-size: 24px;
-    font-weight: 300;
+.section-container.dark-gray {
+    background: #111;
 }
-/* Исправить */
-.mb0 {
-    margin-bottom: 0; 
-    color: #008cff;
-    overflow: hidden;
+
+.section-container {
+    padding: 70px 0;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-container {
+    margin: 40px auto;
+}
+
+.hero-container .hero-heading {
+    max-width: 580px;
+    margin: 0 auto;
+    text-align: center!important;
+}
+
+.body-xl {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.1em;
+    letter-spacing: -.02em;
+}
+
+.type-heading-light {
+    color: #eee;
+}
+
+.hero-container .hero-body {
+    text-align: center;
+    max-width: 630px;
+    margin: 40px auto 0;
+    line-height: 1.48;
+}
+
+.body-m {
+    font-size: 20px;
+    line-height: 1.45;
+    letter-spacing: .001em;
+}
+
+.type-body-light {
+    color: #fff;
+}
+
+p {
+    margin-bottom: 1.7em;
+}
+
+.break {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 50px auto;
+}
+
+.tiles-container.single {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 16px;
+}
+
+.tiles-container {
+    max-width: 720px;
+    margin: 0 auto 16px auto;
+}
+
+.tile.dark, .tile.tile-shelf {
+    background: #1a1a1a;
+}
+
+.tile {
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    position: relative;
+}
+
+.tile .tile-body h5 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-bottom: 7px;
+}
+
+.tile .tile-body {
+    padding: 34px;
+    position: relative;
+}
+
+article h1, h2, h3, h4, h5, h6 {
+    color: #000;
+    line-height: 1.2em;
+    margin-bottom: 0.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.tile-shelf .tile-body {
+    max-width: 40%;
 }
 
 
+h5 {
+    color: #000;
+    line-height: 1.2em;
+    margin-bottom: 0.2em;
+    max-width: 600px;
+    margin: 0 auto;
+    background:url(../images/backgroudtext.png) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-name: gradient;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes gradient {
+
+    0%{
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.tile .tile-body p {
+    letter-spacing: 0;
+}
+
+.body-s, article ol li, article p, article ul li {
+    font-size: 16px;
+    line-height: 1.45;
+    letter-spacing: .001em;
+}
+
+/* Сюда гифка */
+.tile-shelf {
+    background-size: 490px 399px!important;
+    background-position: top right!important;
+    background-repeat: no-repeat!important;
+    min-height: 300px;
+}
+/* Сюда гифка */
+
+.tiles-container.two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+    align-items: top;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.tile .tile-footer.tile-footer-padding {
+    padding: 0 34px 34px 34px;
+}
+
+.tile .tile-footer {
+    display: block;
+    width: 100%;
+}
+
+.tile .tile-footer img {
+    display: block;
+    max-width: 100%;
+}
+
+.tile .tile-footer img.rounded {
+    border-radius: 8px;
+}
 
