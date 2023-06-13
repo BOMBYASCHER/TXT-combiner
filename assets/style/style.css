@@ -170,6 +170,45 @@ h5 {
 .btn::after {
     background:#0281ac;
 }
+
+.btn2 {
+    padding: 15px 40px;
+    border-radius: 43px;
+    background: #1A1A1A;
+    border: 0;
+    font-size: 40px;
+    font-weight: 300;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    --size: 0px;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn b2{
+    position: relative;
+    z-index: 10;
+}
+
+.btn::after, .btn::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: var(--size);
+    width: var(--size);
+    border-radius: 50%;
+    left: calc(50% - var(--size) / 2);
+    top: calc(50% - var(--size) / 2);
+    transition: all 0.5s ease;
+}
+
+.btn:hover{
+    --size: 400px;
+}
+
+.btn::after {
+    background:#262626;
+}
 /* button knopka */
 
 .winCompatible {
@@ -202,6 +241,10 @@ a:-webkit-any-link {
     background: #fff;
 }
 /* background 2  */
+
+.bgDarkGrey {
+    background: #111;
+}
 
 .wrapper1 {
     padding: 10px 0;
