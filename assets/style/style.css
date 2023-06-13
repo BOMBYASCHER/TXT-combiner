@@ -185,12 +185,12 @@ h5 {
     text-decoration: none;
     display: inline-block;
 }
-.btn b2{
+.btn2 b{
     position: relative;
     z-index: 10;
 }
 
-.btn::after, .btn::before {
+.btn2::after, .btn2::before {
     content: '';
     display: block;
     position: absolute;
@@ -202,11 +202,11 @@ h5 {
     transition: all 0.5s ease;
 }
 
-.btn:hover{
+.btn2:hover{
     --size: 400px;
 }
 
-.btn::after {
+.btn2::after {
     background:#262626;
 }
 /* button knopka */
@@ -448,3 +448,16 @@ p:last-child {
     will-change: transform;
 }
 
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+  }
+  
+ ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(180deg, #00BFFF, #0281ac);
+  }
