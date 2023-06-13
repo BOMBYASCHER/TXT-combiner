@@ -9,7 +9,7 @@ body {
 }
 
 .bgBanner02 {
-    background:#e28383 ;
+    background:url(../images/1624728626_preview.jpg) ;
     height: 950px;
     background-size: cover;
 }
@@ -45,7 +45,7 @@ div {
 .logo {
     padding: 65px 20px 0 55px;
     float: left;
-    background:#e28383 left 65px no-repeat;
+/* background */
     text-decoration: none;
 }
 
@@ -177,7 +177,7 @@ h5 {
     color: #fff;
     background: url(../images/linux_PNG53x.png) 0 0 no-repeat;
     display: inline-block;
-    padding: 2px 0 2px 30px;
+    padding: 1px 0 2px 30px;
     margin-top: 20px;
 }
 
@@ -339,8 +339,8 @@ h5 {
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
-@keyframes gradient {
 
+@keyframes gradient {
     0%{
         background-position: 0 0;
     }
