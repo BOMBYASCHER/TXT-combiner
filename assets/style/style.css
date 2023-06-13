@@ -4,15 +4,18 @@ body {
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
+
 body {
     display: block;
 }
 
+/* main background */
 .bgBanner02 {
     background:#262626 ;
     height: 950px;
     background-size: cover;
 }
+/* main background */
 
 div, span, p, input, textarea, button, label {
     font-size: 22px;
@@ -42,12 +45,14 @@ div {
     margin: 0 auto;
 }
 
+/* main mini logo */
 .logo {
     padding: 65px 20px 0 55px;
     float: left;
 /* background */
     text-decoration: none;
 }
+/* main mini logo */
 
 .clear {
     clear: both;
@@ -126,12 +131,15 @@ h5 {
     font-weight: bold;
 }
 
+/* text main screen */
 .h1IndexTagline {
     font-size: 42px;
     font-weight: 300;
     margin-top: -30px;
 }
+/* text main screen */
 
+/* buttons */
 .btn {
     padding: 15px 40px;
     border-radius: 43px;
@@ -209,9 +217,10 @@ h5 {
 .btn2::after {
     background:#262626;
 }
-/* button knopka */
+/* buttons knopka */
 
-.winCompatible {
+/* icon lin */
+.linuxCompatible {
     font-size: 18px;
     color: #fff;
     background: url(../images/linux_PNG53x.png) 0 0 no-repeat;
@@ -219,7 +228,9 @@ h5 {
     padding: 1px 0 2px 30px;
     margin-top: 20px;
 }
+/* icon lin */
 
+/* fix linkov */
 .eula_link {
     font-size: 14px;
     color: #fff;
@@ -233,18 +244,17 @@ a:-webkit-any-link {
     text-decoration: underline;
 }
 
-.eula_link a {
-    color: #fff;
-}
-
+/* background 2 */
 .bgWhite {
     background: #fff;
 }
-/* background 2  */
+/* background 2 */
 
+/* background 3 */
 .bgDarkGrey {
     background: #111;
 }
+/* background 3 */
 
 .wrapper1 {
     padding: 10px 0;
@@ -257,6 +267,13 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
+/* fix linkov */
+.eula_link a {
+    color: #fff;
+}
+/* fix linkov */
+
 
 .section-container.dark-gray {
     background: #111;
@@ -448,16 +465,16 @@ p:last-child {
     will-change: transform;
 }
 
-  ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 10px;
-  }
+}
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
     background-color: #1a1a1a;
     border-radius: 10px;
-  }
-  
- ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background: linear-gradient(180deg, #00BFFF, #0281ac);
-  }
+}
