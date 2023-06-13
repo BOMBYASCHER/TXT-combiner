@@ -8,12 +8,12 @@ if (ScrollTrigger.isTouch !==1){
     smooth: 1.5,
     effect: true 
 })
-gsap.fromTo('.hero-section',{ opacity: 1},{
+gsap.fromTo('.bgBanner02',{ opacity: 1},{
  opacity: 0,
  scrollTrigger: {
-    trigger: '.hero-section',
-    start: 'bgBanner02',
-    end: 'bottom',
+    trigger: '.bgBanner02',
+    start: 'center',
+    end: '900',
     scrub: true
  }
 
