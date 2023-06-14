@@ -7,7 +7,20 @@ body {
 
 body {
     display: block;
+    cursor: url('/assets/images/image.png'), auto;
 }
+/*курсор доделать*/
+.btn2:hover {
+	cursor: url('/assets/images/image.png'), auto;
+}
+.btn:hover {
+	cursor: url('/assets/images/image.png'), auto;
+}
+
+.eula_link a:hover {
+	cursor: url('/assets/images/image.png'), auto;
+}
+/*курсор доделать*/
 
 /* main background */
 .bgBanner02 {
