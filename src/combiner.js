@@ -2,7 +2,7 @@ import { writeFile } from 'node:fs';
 import copyrate from './copyrate.js';
 import addtofile from './addtofile.js';
 
-export default (resultFileName, filePaths, separator = '\n\n\n') => {};
+export default (resultFilePath, filePaths, separator = '\n\n\n') => {};
 
 /**
  *  Главная функция, движок приложения. Ничего не возвращает.
