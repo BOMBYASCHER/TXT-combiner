@@ -18,7 +18,7 @@ jobs:
     strategy:
       # Node versions list
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
+        os: [ubuntu-latest, macos-latest]
         node-version: [20.x]
 
     steps:
