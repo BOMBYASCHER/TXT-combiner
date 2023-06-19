@@ -1,13 +1,4 @@
-import { appendFile } from 'node:fs';
-import buildpath from './buildpath';
+import { appendFileSync } from 'node:fs';
+import buildpath from './buildpath.js';
 
-export default (filePath, data) => {
-  appendFile('message.txt', 'data to append', function (err) {
-    if (err) throw err;
-    console.log('Saved!');
-  });
-};
-
-/**
- * "buildpath" для построения абсолютного пути.
- */
+export default (filePath, data) => appendFileSync(buildpath(filePath), data);

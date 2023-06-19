@@ -1,8 +1,4 @@
-import buildpath from './buildpath';
+import { readFileSync } from 'node:fs';
+import buildpath from './buildpath.js';
 
-export default (filePath) => {};
-
-/**
- * Возвращает данные из файла в виде строки
- * Ипользует "buildpath" чтобы по пути извлечь данные из файла
- */ 
+export default (filePath) => readFileSync(buildpath(filePath), 'utf-8');

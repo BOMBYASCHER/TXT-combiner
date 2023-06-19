@@ -1,4 +1,4 @@
-import { readFile, writeFile, unlink } from 'node:fs';
+import { readFileSync, writeFileSync, unlink } from 'node:fs';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import path from 'node:path';
@@ -12,16 +12,16 @@ afterAll(() => {
   unlink(filePath, (err) => err);
 });
 
-test('Check addtofile', async () => {
-  writeFile(filePath, '', () => null);
+test('Check addtofile', () => {
+  writeFileSync(filePath, '');
 
-  expect(readFile(filePath, 'utf-8', () => null)).toEqual('');
+  expect(readFileSync(filePath, 'utf-8')).toEqual('');
 
   addtofile(filePath, 'Hello');
 
-  expect(readFile(filePath, 'utf-8', () => null)).toEqual('Hello');
+  expect(readFileSync(filePath, 'utf-8')).toEqual('Hello');
 
   addtofile(filePath, 'World!');
 
-  expect(readFile(filePath, 'utf-8', () => null)).toEqual('HelloWorld!');
+  expect(readFileSync(filePath, 'utf-8')).toEqual('HelloWorld!');
 });
