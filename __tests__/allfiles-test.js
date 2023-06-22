@@ -21,20 +21,16 @@ test('Check allfiles', () => {
   expect(allfiles(path1)).toEqual(correct1);
   expect(allfiles(absPath1)).toEqual(correct1);
 
-  const path2 = '.';
+  const path2 = '__fixtures__';
   const correct2 = [
-    '.eslintignore',
-    '.eslintrc.yml',
-    '.gitignore',
-    '.npmrc',
-    'Makefile',
-    'README.md',
-    'index.js',
-    'package-lock.json',
-    'package.json',
-    'site.html',
+    'correct-output1.txt',
+    'file1.txt',
+    'file2.txt',
+    'file3.txt',
+    'file4.txt',
+    'file5.txt',
   ];
-  const absPath2 = path.join(__dirname, '..');
+  const absPath2 = path.join(__dirname, '..', '__fixtures__');
   expect(allfiles(path2)).toEqual(correct2);
   expect(allfiles(absPath2)).toEqual(correct2);
 });
