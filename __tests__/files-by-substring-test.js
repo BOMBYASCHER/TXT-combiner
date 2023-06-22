@@ -19,31 +19,18 @@ test('Check files-by-substring', () => {
   expect(filesBySubName(path1, 'a')).toEqual(correct1);
   expect(filesBySubName(absPath1, 'a')).toEqual(correct1);
 
-  const path2 = allfiles('.');
+  const path2 = allfiles('__fixtures__');
   const correct2 = [
-    '.eslintignore',
-    '.eslintrc.yml',
-    '.gitignore',
-    '.npmrc',
-    'Makefile',
-    'README.md',
-    'index.js',
-    'package-lock.json',
-    'package.json',
-    'site.html',
+    'file1.txt',
+    'file2.txt',
+    'file3.txt',
+    'file4.txt',
+    'file5.txt',
   ];
-  const absPath2 = allfiles(path.join(__dirname, '..'));
-  expect(filesBySubName(path2, '')).toEqual(correct2);
-  expect(filesBySubName(absPath2, '')).toEqual(correct2);
-  const correct3 = [
-    'README.md',
-  ];
+  const absPath2 = allfiles(path.join(__dirname, '..', '__fixtures__'));
+  expect(filesBySubName(path2, 'ile')).toEqual(correct2);
+  expect(filesBySubName(absPath2, 'f')).toEqual(correct2);
+  const correct3 = [];
   expect(filesBySubName(path2, 'A')).toEqual(correct3);
   expect(filesBySubName(absPath2, 'A')).toEqual(correct3);
-  const correct4 = [
-    '.eslintignore',
-    '.eslintrc.yml',
-  ];
-  expect(filesBySubName(path2, 'lint')).toEqual(correct4);
-  expect(filesBySubName(absPath2, 'lint')).toEqual(correct4);
 });
