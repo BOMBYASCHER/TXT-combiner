@@ -1,5 +1,7 @@
-export default (directoryPath) => {};
+import { readdirSync, statSync } from 'node:fs';
+import buildpath from '../buildpath.js';
 
-/**
- * Возвращает массив названий файлов по указанному пути директории
- */
+export default (directoryPath = '.') => {
+  const content = readdirSync(buildpath(directoryPath));
+  return content.filter((elem) => statSync(buildpath(directoryPath, elem)).isFile());
+};

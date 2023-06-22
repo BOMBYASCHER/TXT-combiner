@@ -1,1 +1,1 @@
-export default (separator) => `${separator}`;
+export default (separator) => separator.split('\\n').join('\n');

@@ -1,4 +1,4 @@
 import { cwd } from 'node:process';
-import path from 'node:path';
+import { resolve } from 'node:path';
 
-export default (filePath) => path.resolve(cwd(), filePath);
+export default (...filePath) => resolve(cwd(), ...filePath);
