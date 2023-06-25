@@ -23,7 +23,6 @@ program
   .option('-s, --separator <string>', 'separator between data', '\n\n\n')
   .action((filename, files) => {
     const options = program.opts();
-    console.log(options)
     const separator = sep(options.separator);
     if (options.all) {
       combiner(filename, allfiles(), separator);
