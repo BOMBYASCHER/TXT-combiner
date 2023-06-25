@@ -4,10 +4,11 @@ import combiner from '../index.js';
 import sep from '../src/options/separator.js';
 //  import setDirectory from '../src/options/directory.js';
 import allfiles from '../src/options/allfiles.js';
+import byExtension from '../src/options/files-by-extension.js';
 import bySubstring from '../src/options/files-by-substring.js';
 
 program
-  .version('1.1.1')
+  .version('1.2.0')
   .description(
     `The program combines many TXT files into one.
 It copies data from files and adds to the file specified by the first parameter.`,
@@ -17,20 +18,22 @@ It copies data from files and adds to the file specified by the first parameter.
 
 program
   .option('-a, --all', 'takes all files in cwd')
-  //  .option('-d, --directory <path>', 'Change work directory', '.')
-  .option('-S, --substring <string>', 'takes files by subname in cwd')
+  .option('-e, --extension <string>', 'takes files by extension in cwd', false)
+  .option('-S, --substring <string>', 'takes files by subname in cwd', false)
   .option('-s, --separator <string>', 'separator between data', '\n\n\n')
   .action((filename, files) => {
     const options = program.opts();
+    console.log(options)
     const separator = sep(options.separator);
     if (options.all) {
-      combiner(filename, allfiles('.'), separator);
+      combiner(filename, allfiles(), separator);
     }
     if (options.substring) {
-      combiner(filename, bySubstring(allfiles('.'), options.substring), separator);
+      combiner(filename, bySubstring(allfiles(), options.substring), separator);
     }
-    //  const filePath = setDirectory(filename, options.directory);
-    //  console.log(filePath);
+    if (options.extension) {
+      combiner(filename, byExtension(allfiles(), options.extension), separator);
+    }
     combiner(filename, files, separator);
   });
 

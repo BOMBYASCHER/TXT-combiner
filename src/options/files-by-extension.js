@@ -1,6 +1,1 @@
-export default (fileNames, extension) => {};
-
-/* 
-  Реализует логику отбора из списка имён всех файлов в директории
-  которая возвращает список имён по указанному расширению
-*/
+export default (files, extension) => files.filter((name) => name.split('.')[1].includes(extension));

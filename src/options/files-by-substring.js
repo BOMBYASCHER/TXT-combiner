@@ -1,1 +1,1 @@
-export default (names, substring) => names.filter((name) => name.includes(substring));
+export default (files, substring) => files.filter((name) => name.split('.')[0].includes(substring));
