@@ -18,8 +18,8 @@ It copies data from files and adds to the file specified by the first parameter.
 
 program
   .option('-a, --all', 'takes all files in cwd')
-  .option('-e, --extension <string>', 'takes files by extension in cwd', false)
-  .option('-S, --substring <string>', 'takes files by subname in cwd', false)
+  .option('-e, --extension <string>', 'takes files by extension in cwd')
+  .option('-S, --substring <string>', 'takes files by subname in cwd')
   .option('-s, --separator <string>', 'separator between data', '\n\n\n')
   .action((filename, files) => {
     const options = program.opts();

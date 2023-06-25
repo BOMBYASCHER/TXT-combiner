@@ -29,8 +29,8 @@ Arguments:
 Options:
   -V, --version             output the version number
   -a, --all                 takes all files in cwd
-  -e, --extension <string>  takes files by extension in cwd (default: false)
-  -S, --substring <string>  takes files by subname in cwd (default: false)
+  -e, --extension <string>  takes files by extension in cwd
+  -S, --substring <string>  takes files by subname in cwd
   -s, --separator <string>  separator between data (default: "\n\n\n")
   -h, --help                display help for command
 ```
