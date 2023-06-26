@@ -35,7 +35,7 @@ Options:
   -h, --help                display help for command
 ```
 
-The program needs two parameters. The first parameter is the name of the file in which the data will be written, the second parameter is the files from which the data will be copied. The first parameter is mandatory, after it you can specify any number of files.
+The program has two parameters. The first parameter is the name of the file in which the data will be written, the second parameter is the files from which the data will be copied. The first parameter is mandatory, after it you can specify any number of files.
 
 ## Options
 
@@ -45,6 +45,32 @@ The options can be specified in any position (before or after the file name).
 2. "-e, --extension <string>" this option selects files by a specified extension, such as 'txt' or 'md'. This has a mandatory string argument. 
 3. "-S, --substring <string>" 'This option selects files by a substring in the file name. This has a mandatory string argument.
 4. "-s, --separator <string>" This option changes the separator between the data being appended to the file. It has a mandatory argument as a string. Special characters must be written in quotes. The default separator is '\n\n\n'.
+
+## Example of use
+
+### Without options
+
+[![asciicast](https://asciinema.org/a/yRzHYm3gvbaVJC9lmkLUEz2DZ.svg)](https://asciinema.org/a/yRzHYm3gvbaVJC9lmkLUEz2DZ)
+
+### '-a, --all'
+
+[![asciicast](https://asciinema.org/a/0Q2ehiiuNWj370BxYAM2vk0Jc.svg)](https://asciinema.org/a/0Q2ehiiuNWj370BxYAM2vk0Jc)
+
+### '-e, --extension'
+
+[![asciicast](https://asciinema.org/a/0k0pwJXp1ZFIcUhgDZfR8QJ0f.svg)](https://asciinema.org/a/0k0pwJXp1ZFIcUhgDZfR8QJ0f)
+
+### '-e, --extension' + '-s, --separator'
+
+[![asciicast](https://asciinema.org/a/h7lM4AUOwWVGmqwn0VDy1DbuM.svg)](https://asciinema.org/a/h7lM4AUOwWVGmqwn0VDy1DbuM)
+
+### '-a, --all' + '-s, --separator'
+
+[![asciicast](https://asciinema.org/a/vIrd1uzGc5BJFYbHF8zY7RhiP.svg)](https://asciinema.org/a/vIrd1uzGc5BJFYbHF8zY7RhiP)
+
+### '-S, --substring <string>'
+
+[![asciicast](https://asciinema.org/a/DApEmV5N4A47pB80diJ4N2LU5.svg)](https://asciinema.org/a/DApEmV5N4A47pB80diJ4N2LU5)
 
 ### Setup
 ```bash
