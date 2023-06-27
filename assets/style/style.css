@@ -497,13 +497,13 @@ p:last-child {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 400px;
+    width: 650px;
     height: 400px;
-    outline: 2px dashed #5d5d5d;
+    outline: 2px dashed #ffffff;
     outline-offset: -12px;
-    background-color: #e0f2f7;
+    background-color: #1a1a1a;
     font-family: 'Segoe UI';
-    color: #1f3c44;
+    color: #ffffff;
 }
 
 #upload-container img {
