@@ -8,8 +8,9 @@ body {
 body {
     display: block;
     cursor: url('/assets/images/Снимок.PNG.png'), auto;
-}
-/*курсор доделать*/
+}  
+
+/*курсор */
 .btn2:hover {
     cursor: url('/assets/images/Снимок.PNG.png'), auto;
 }
@@ -20,11 +21,9 @@ body {
 .eula_link a:hover {
     cursor: url('/assets/images/Снимок.PNG.png'), auto;
 }
-/*курсор доделать*/
-
+/*курсор */
 /* main background */
 .bgBanner02 {
-    background:#262626 ;
     height: 950px;
     background-size: cover;
 }
