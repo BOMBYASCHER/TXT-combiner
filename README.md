@@ -52,23 +52,23 @@ The options can be specified in any position (before or after the file name).
 
 [![asciicast](https://asciinema.org/a/yRzHYm3gvbaVJC9lmkLUEz2DZ.svg)](https://asciinema.org/a/yRzHYm3gvbaVJC9lmkLUEz2DZ)
 
-### '-a, --all'
+### With '-a, --all' option
 
 [![asciicast](https://asciinema.org/a/0Q2ehiiuNWj370BxYAM2vk0Jc.svg)](https://asciinema.org/a/0Q2ehiiuNWj370BxYAM2vk0Jc)
 
-### '-e, --extension'
+### With '-e, --extension' option
 
 [![asciicast](https://asciinema.org/a/0k0pwJXp1ZFIcUhgDZfR8QJ0f.svg)](https://asciinema.org/a/0k0pwJXp1ZFIcUhgDZfR8QJ0f)
 
-### '-e, --extension' + '-s, --separator'
+### With '-e, --extension' and '-s, --separator' options
 
 [![asciicast](https://asciinema.org/a/h7lM4AUOwWVGmqwn0VDy1DbuM.svg)](https://asciinema.org/a/h7lM4AUOwWVGmqwn0VDy1DbuM)
 
-### '-a, --all' + '-s, --separator'
+### With '-a, --all' and '-s, --separator' options
 
 [![asciicast](https://asciinema.org/a/vIrd1uzGc5BJFYbHF8zY7RhiP.svg)](https://asciinema.org/a/vIrd1uzGc5BJFYbHF8zY7RhiP)
 
-### '-S, --substring <string>'
+### With '-S, --substring <string>' option
 
 [![asciicast](https://asciinema.org/a/DApEmV5N4A47pB80diJ4N2LU5.svg)](https://asciinema.org/a/DApEmV5N4A47pB80diJ4N2LU5)
 
