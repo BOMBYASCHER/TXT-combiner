@@ -1,6 +1,6 @@
 {
   "name": "txt-combiner",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Project for summer practice",
   "main": "index.js",
   "type": "module",
