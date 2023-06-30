@@ -8,7 +8,7 @@ import byExtension from '../src/options/files-by-extension.js';
 import bySubstring from '../src/options/files-by-substring.js';
 
 program
-  .version('1.2.0')
+  .version('1.2.1')
   .description(
     `The program combines many TXT files into one.
 It copies data from files and adds to the file specified by the first parameter.`,

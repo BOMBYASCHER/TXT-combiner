@@ -6,7 +6,7 @@ import combine from '../src/combiner.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const resultFilePath = path.join(__dirname, '..', '__fixtures__', 'testfile-test-combine.txt');
+const resultFilePath = path.join(__dirname, '..', '__fixtures__', 'testdir', 'testfile-test-combine.txt');
 
 afterAll(() => {
   unlinkSync(resultFilePath);
