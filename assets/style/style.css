@@ -535,12 +535,12 @@ p:last-child {
 }
 
 #upload-container input[type=file]:focus + label {
-   -webkit-focus-ring-color: auto 5px;
+    -webkit-focus-ring-color: auto 5px;
     outline: 1px solid #0078d7;
 }
 
 :focus {
-   -webkit-focus-ring-color: auto 5px;
+    -webkit-focus-ring-color: auto 5px;
 }
 
 #upload-container label.focus {
